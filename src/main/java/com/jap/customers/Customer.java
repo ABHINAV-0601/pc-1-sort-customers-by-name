@@ -1,6 +1,6 @@
 package com.jap.customers;
 
-public class Customer {
+public class Customer implements Comparable<Customer>{
 private int customerId;
 private String customerName;
 private String customerGender;
@@ -64,5 +64,9 @@ private String city;
                 ", isSeniorCitizen=" + isSeniorCitizen +
                 ", city='" + city + '\'' +
                 '}';
+    }
+    @Override
+    public int compareTo(Customer customer){
+        return this.customerName.compareTo(customer.customerName);
     }
 }
