@@ -27,6 +27,9 @@ public List<String> getListOfCustomersSortedByName(List<Customer> customerList){
         customerList.add(new Customer(10,"Abhishek","Male",false,"Indore"));
         customerList.add(new Customer(11,"Vaibhav","Male",false,"Indore"));
         customerList.add(new Customer(12,"Diwakar","Male",false,"Indore"));
+        /*for(Customer element : customerList){
+            System.out.println(element);
+        }*/
 
         System.out.println(customerService.getListOfCustomersSortedByName(customerList));
     }
